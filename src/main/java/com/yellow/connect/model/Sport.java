@@ -5,8 +5,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToOne;
+import lombok.Data;
 
-@Entity public class Sport extends Interest{
+@Entity
+@Data
+public class Sport extends Interest{
 
     @Id
     @GeneratedValue
